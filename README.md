@@ -1,5 +1,10 @@
 # pde-dsl
-A DSL for Solving PDE
+
+A DSL for Solving PDE.
+
+# 目标方程
+
+## 热传导方程
 
 目标方程：
 
@@ -14,3 +19,9 @@ $$
 其中，
 
 $b_x^{\prime}=-\frac{1}{\rho} \frac{\partial p_{\mathrm{a}}}{\partial x}-g \frac{\partial z_{\mathrm{b}}}{\partial x}+\frac{\tau_{\mathrm{as}}-\tau_{\mathrm{br}}}{h}+F_{\mathrm{b} x}$
+
+## 浅水方程
+
+### 最简情况
+
+### 一般unregular网格形
