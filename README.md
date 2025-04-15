@@ -2,9 +2,31 @@
 
 A DSL for Solving PDE.
 
-# 目标方程
+# 测试集目标方程
 
 ## 热传导方程
+
+$$
+\frac{\partial{u}}{\partial{t}} = \Delta u
+$$
+
+## 浅水方程（SWE）
+
+### 一维浅水方程
+
+$$
+\left\{
+\begin{array}
+{ll}\frac{\partial}{\partial t}h+\frac{\partial}{\partial x}hv=0 & \quad(1) \\
+\frac{\partial}{\partial t}hv+\frac{\partial}{\partial x}\left(hv^2+\frac{gh^2}{2}\right)=0 & \quad(2)
+\end{array}\right.
+$$
+
+方程中，$h(x,t)$代表水在时间t位置x的深度，$v(x,t)$代表水在位置的流速。
+
+### 二维潜水方程
+
+### 二维圣维南方程
 
 目标方程：
 
@@ -20,8 +42,12 @@ $$
 
 $b_x^{\prime}=-\frac{1}{\rho} \frac{\partial p_{\mathrm{a}}}{\partial x}-g \frac{\partial z_{\mathrm{b}}}{\partial x}+\frac{\tau_{\mathrm{as}}-\tau_{\mathrm{br}}}{h}+F_{\mathrm{b} x}$
 
-## 浅水方程
-
 ### 最简情况
 
 ### 一般unregular网格形
+
+# 求解方法
+
+## fdm
+
+## fvm
